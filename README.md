@@ -2,179 +2,216 @@
 
 A structured operations system demonstrating how Google Workspace can be designed as an operational infrastructure layer for a modern remote business.
 
-The system combines structured intake, centralized data management, workflow coordination, document production, automation logic, quality control, and executive reporting into one connected operating model.
+The system connects structured intake, centralized data management, workflow coordination, document production, quality control, automation architecture, and executive visibility into one operating model.
 
 ## Overview
 
-Many businesses use Google Workspace as a collection of individual tools.
+Modern remote businesses often rely on multiple tools to manage requests, tasks, documents, communication, and reporting.
 
-Google Forms is used for intake.
+The challenge is not simply having the right tools.
 
-Google Sheets is used for tracking.
+The challenge is designing how those tools work together.
 
-Google Drive is used for storage.
+This project demonstrates an operations architecture built around:
 
-Google Docs is used for documentation.
+**Google Forms → Google Sheets → Google Drive → Google Docs → Apps Script → AI Tools → Human Review**
 
-The problem is that these tools often operate independently, creating fragmented workflows, duplicate data, manual updates, inconsistent processes, and limited visibility for leadership.
-
-This project demonstrates how those tools can instead be designed as components of a connected operations system.
+The system is designed to create a structured flow from request intake through completion and reporting.
 
 ## Business Problem
 
-A growing remote organization may receive requests, manage projects, produce documents, assign work, and report status across multiple disconnected tools.
+Operational work can become fragmented when requests arrive through different channels and information is stored across disconnected systems.
 
-Without a structured operating system, this can create:
+Common problems include:
 
-- Manual data entry
-- Duplicate information
+- Unstructured requests
+- Inconsistent information
 - Unclear ownership
-- Inconsistent workflows
-- Poor status visibility
-- Repetitive administrative work
-- Delayed reporting
-- Difficulty identifying exceptions
-- Limited executive visibility
+- Poor workflow visibility
+- Duplicate data entry
+- Manual document production
+- Missed deadlines
+- Inconsistent quality control
+- Limited exception visibility
+- Time-consuming status reporting
 
-The objective is not simply to use more tools.
-
-The objective is to design a system where information moves through the organization in a controlled and traceable manner.
+A well-designed operations system should provide a clear structure for moving work from request to completion while maintaining accountability and visibility.
 
 ## System Objective
 
-The system is designed to create a centralized operational flow:
+The objective of this system is to demonstrate how a remote business can structure its operational workflows around a centralized information layer and defined workflow states.
 
-Request Intake  
-↓  
-Structured Data Capture  
-↓  
-Operations Tracking  
-↓  
-Prioritization and Assignment  
-↓  
-Workflow Execution  
-↓  
-Document Production  
-↓  
-Quality Control  
-↓  
-Status Reporting  
-↓  
-Executive Visibility
+The operating flow is:
+
+**Request Intake → Structured Data Capture → Operations Tracking → Prioritization and Assignment → Workflow Execution → Document and Deliverable Production → Quality Control → Status Reporting → Executive Visibility**
+
+The system is designed to support both human execution and future automation.
 
 ## Core Architecture
 
-The operating model uses Google Workspace as the primary system layer.
-
-| Component | Operational Role |
+| Layer | Primary Function |
 |---|---|
-| Google Forms | Structured request and information intake |
-| Google Sheets | Central operational database and tracker |
-| Google Drive | Controlled document and file storage |
+| Google Forms | Structured request intake |
+| Google Sheets | Central operational data layer |
+| Google Drive | File and document organization |
 | Google Docs | Standardized document production |
-| Apps Script | Workflow automation and system logic |
-| AI Tools | Classification, analysis, drafting, and decision support |
-| Human Review | Approval, exception handling, and accountability |
+| Apps Script | Workflow automation layer |
+| AI Tools | Analysis, drafting, classification, and decision support |
+| Human Review | Validation, approval, judgment, and exception handling |
+
+The architecture separates structured operational data from working documents while maintaining relationships between them.
 
 ## Design Principles
 
 ### 1. Single Source of Truth
 
-Operational information should have a defined system of record rather than being distributed across disconnected documents and messages.
+Operational information should be maintained in a centralized and structured data layer.
+
+This reduces conflicting information and unnecessary duplicate entry.
 
 ### 2. Structured Intake
 
-Information should enter the system through standardized fields whenever possible.
+Requests should enter the system through defined fields rather than relying entirely on informal messages or unstructured communication.
 
 ### 3. Workflow State
 
-Every operational request should have a clear status so its current position can be understood without manually reconstructing the workflow.
+Every active request should have a clear operational state.
+
+This makes it possible to determine what has happened, what is happening, and what needs to happen next.
 
 ### 4. Automation With Human Oversight
 
-Automation should handle repetitive and structured work while humans retain responsibility for judgment, exceptions, approvals, and final decisions.
+Automation should handle repetitive and predictable work.
+
+AI can assist with complex information processing and content generation.
+
+Human review remains responsible for judgment, factual verification, approval, and exceptions.
 
 ### 5. Standardization
 
-Recurring operational activities should use consistent fields, naming conventions, templates, and workflow rules.
+Templates, controlled fields, workflow rules, naming conventions, and quality standards should be used to create consistent outputs.
 
 ### 6. Exception-Based Management
 
-Leadership should not need to inspect every individual task.
-
-The system should make exceptions, delays, missing information, and items requiring attention easier to identify.
+Management attention should be directed toward blocked work, deadline risks, quality issues, and other conditions that require intervention.
 
 ### 7. Traceability
 
-Important operational actions should leave enough information behind to understand what happened, when it happened, and what stage the request reached.
-
-## Portfolio Scope
-
-This project focuses on system architecture and operational design rather than proprietary company data.
-
-Examples and data structures are intentionally sanitized and demonstrate the underlying methodology without exposing confidential information, credentials, private records, or proprietary business information.
+Operational actions, documents, decisions, and exceptions should remain connected to the underlying request.
 
 ## Documentation
 
-Detailed system documentation will cover:
+The repository contains detailed documentation for the system architecture, workflows, data model, automation logic, and exception handling.
 
-- System architecture
-- Data flow
-- Request intake
-- Task management
-- Document generation
-- Quality control
+### Architecture
+
+- [System Architecture Overview](architecture/system-overview.md)
+- [Operational Data Flow](architecture/data-flow.md)
+- [Automation Architecture](architecture/automation-architecture.md)
+
+### Workflows
+
+- [Request Intake Workflow](workflows/request-intake.md)
+- [Task Management Workflow](workflows/task-management.md)
+- [Document Generation Workflow](workflows/document-generation.md)
+- [Quality Control Workflow](workflows/quality-control.md)
+
+### Data Model
+
+- [Operations Tracker](data-model/operations-tracker.md)
+- [Field Definitions](data-model/field-definitions.md)
+
+### Automation
+
+- [Automation Logic](automation/automation-logic.md)
+- [Exception Handling](automation/exception-handling.md)
+
+## Portfolio Scope
+
+This repository demonstrates operational system design rather than a claim of a fully deployed production application.
+
+The focus is on:
+
+- Process architecture
+- Workflow design
+- Data structure
+- Operational visibility
 - Automation logic
-- Exception handling
-- Executive reporting
-- Data model and field definitions
+- AI-assisted operations
+- Quality control
+- Exception management
+- Human-in-the-loop design
+- Executive reporting concepts
+
+Implementation details can be adapted to the tools, processes, security requirements, and operating environment of a specific organization.
 
 ## Why This Matters
 
-A Founder Associate or Executive Operations professional is often responsible for making information, people, processes, and tools work together.
+A Founder Associate or Executive Operations professional often works across people, processes, information, and tools.
 
-This project demonstrates the ability to think beyond individual tasks and design the operational system surrounding those tasks.
+The value is not limited to completing individual tasks.
 
-The emphasis is on:
+It also includes understanding how work moves through an organization and identifying opportunities to improve:
 
-- Process architecture
-- Operational visibility
-- Workflow design
+- Process efficiency
+- Information quality
+- Accountability
+- Visibility
+- Standardization
 - Automation
-- AI-assisted operations
-- Data structure
+- Decision support
+
+This project demonstrates the ability to think about operations as a connected system rather than a collection of individual tasks.
+
+## Founder Associate / Executive Operations Relevance
+
+The system demonstrates capabilities relevant to roles involving:
+
+- Executive support
+- Founder support
+- Operations management
+- Workflow design
+- Process improvement
+- Project coordination
+- Documentation
+- AI-enabled operations
+- Automation planning
+- Data organization
 - Quality control
 - Executive reporting
-- Human-in-the-loop decision making
 
-## Portfolio Positioning
-
-This project demonstrates a practical approach to building lightweight operational infrastructure using tools that many organizations already have.
-
-The goal is not to replace human operators.
-
-The goal is to give them a clearer system, better information flow, less repetitive work, and stronger operational visibility.
+The emphasis is on designing practical operating infrastructure that improves how work is organized, executed, monitored, and reviewed.
 
 ## Future Development
 
-Potential future extensions include:
+Potential future implementation could include:
 
+- Google Forms integration
+- Google Sheets automation
+- Google Drive folder automation
+- Google Docs template generation
+- Apps Script workflows
 - Automated notifications
-- SLA monitoring
-- Approval workflows
 - AI-assisted request classification
-- Automated document generation
-- Executive dashboards
+- AI-assisted document generation
+- Automated quality checks
+- Operational dashboards
 - Exception alerts
-- API integrations
-- Advanced reporting
-- Expanded workflow automation
+- Executive reporting views
+
+These represent potential implementation paths rather than claims of current production deployment.
 
 ## Confidentiality
 
-This repository is a portfolio demonstration of operational system design.
+This portfolio project is intentionally structured around generalized operational architecture.
 
-It does not contain confidential client information, private credentials, proprietary datasets, or sensitive business records.
+No confidential client information, private business records, credentials, proprietary datasets, or sensitive operational data are included.
+
+The repository demonstrates the underlying systems-thinking and workflow-design approach without exposing confidential information.
+
+
+
+
 
 
 
