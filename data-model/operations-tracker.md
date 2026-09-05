@@ -1,6 +1,6 @@
 # Operations Tracker
 
-## Purpose
+## Purpose 
 
 The Operations Tracker is the central operational record for requests moving through the Google Workspace Operations System.
 
